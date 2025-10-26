@@ -39,11 +39,15 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route
-  path="/e-contracts"
-  element={
-    <ProtectedRoute>
-      <EContracts />
-    </ProtectedRoute>
-  }
-/>
+         <Routes>
+  <Route path="/" element={<Home />} />
+  <Route
+    path="/e-contracts"
+    element={
+      <ProtectedRoute>
+        <EContracts />
+      </ProtectedRoute>
+    }
+  />
+</Routes>
+
