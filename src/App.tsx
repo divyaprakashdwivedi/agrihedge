@@ -40,6 +40,10 @@ function App() {
             }
           />
           <Route
-            path="/e-contracts"
-            element={
-              <ProtectedRoute>
+  path="/e-contracts"
+  element={
+    <ProtectedRoute>
+      <EContracts />
+    </ProtectedRoute>
+  }
+/>
